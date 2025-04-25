@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch case</title>
+        <script>
+            
+            const cargo =  prompt('Digite um cargo');
+            const salario = prompt('Digite o salário');
+
+            let aumento = 0;
+
+            switch (cargo) {
+                case 'estágiario':
+                    aumento = 2;
+                    console.log('100%');
+                    break;
+                case 'júnior':
+                    aumento = 1.5;
+                    console.log('50%');
+                    break;
+                case 'pleno':
+                    aumento = 1.2;
+                    console.log('20%');
+                    break;
+                case 'sênior':
+                    aumento = 1.1;
+                    console.log('10%');
+                    break;
+                default:
+                    console.log('cargo não encontrado, escolher um cargo válido');
+            }
+
+            //const novoSalario = salario + (salario * aumento);
+            //console.log(`O novo salário é ${novoSalario}`);
+            const novoSalario = salario * aumento;
+            console.log(`O novo salário é ${novoSalario}!`);
+        </script>
+
+</head>
+<body>
+    
+</body>
+</html>
