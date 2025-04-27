@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+
+    <script type="text/javascript" src="js/jogoDaVelha.js"></script>
+
+   
+</head>
+<body onload="iniciar()">   <!--onload é um evento que carrega o script quando a página carrega-->
+
+    <div id="board">
+    </div><br>
+
+    Linha: <input type="number" min="1" max="3" id="linha"><br>
+    Coluna: <input type="number" min="1" max="3" id="coluna"><br>
+
+    <button onclick="jogar()">Marcar</button>
+
+    <div id="aviso">Vez do jogador: 1</div>
+</body>
+</html>
