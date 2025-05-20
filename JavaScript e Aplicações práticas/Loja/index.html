@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lojinha Online</h1>
+        <div class="cart-icon">
+            <span class="cart-count">0</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Carrinho">
+        </div>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Produtos</h2>
+            <div class="product-list">
+                <div class="product" data-id="1" data-price="99.90">
+                    <img src="https://via.placeholder.com/150" alt="Produto 1">
+                    <h3>Camiseta</h3>
+                    <p class="price">R$ 99,90</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product" data-id="2" data-price="149.90">
+                    <img src="https://via.placeholder.com/150" alt="Produto 2">
+                    <h3>Tênis</h3>
+                    <p class="price">R$ 149,90</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product" data-id="3" data-price="79.90">
+                    <img src="https://via.placeholder.com/150" alt="Produto 3">
+                    <h3>Boné</h3>
+                    <p class="price">R$ 79,90</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Carrinho</h2>
+            <div class="cart-items">
+                <!-- Os itens do carrinho serão adicionados aqui dinamicamente -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: <span id="total">R$ 0,00</span></h3>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
